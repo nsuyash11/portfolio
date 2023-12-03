@@ -1,0 +1,76 @@
+//set text-color
+
+@function set-text-color($bkgndcolor) {
+  @if (lightness($bkgndcolor) > 40) {
+    @return #000;
+  } @else {
+    @return #fff;
+  }
+}
+
+//dark background
+$primary-color: #444;
+$secondary-color: #eece1a;
+$highlight-color: #ee3a1a;
+
+//light background
+// $primary-color: #b6b1b1;
+// $secondary-color: #0370dd;
+// $highlight-color: #eafa08;
+
+$text-color: set-text-color($primary-color);
+
+$show-home-img: true;
+$home-img: url(../img/background.jpg);
+$background-opacity: 0.8;
+
+@mixin easeOutTransition {
+  transition: all 0.5s ease-out;
+}
+
+@mixin background {
+  @if $show-home-img {
+    &#bg-img {
+      background: $home-img;
+      background-attachment: fixed;
+      background-size: cover;
+
+      &:after {
+        content: "";
+        background: rgba($primary-color, $background-opacity);
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        z-index: -1;
+      }
+    }
+  }
+}
+
+//Media Query mixins
+
+@mixin media-sm {
+  @media screen and (max-width: 500px) {
+    @content;
+  }
+}
+
+@mixin media-md {
+  @media screen and (max-width: 768px) {
+    @content;
+  }
+}
+
+@mixin media-lg {
+  @media screen and (min-width: 769px) and (max-width: 1170px) {
+    @content;
+  }
+}
+
+@mixin media-xl {
+  @media screen and (min-width: 1171px) {
+    @content;
+  }
+}

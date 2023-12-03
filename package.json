@@ -1,0 +1,17 @@
+{
+  "name": "portfolio",
+  "version": "1.0.0",
+  "description": "My Portfolio Website",
+  "main": "index.js",
+  "homepage": "https://nsuyash11.github.io/my_portfolio",
+  "scripts": {
+    "sass": "node-sass -w scss/ -o dist/css/ --recursive",
+    "deploy": "gh-pages -d dist"
+  },
+  "author": "Suyash Ratnakar Nachankar",
+  "license": "MIT",
+  "dependencies": {
+    "gh-pages": "^6.1.0",
+    "node-sass": "^9.0.0"
+  }
+}
