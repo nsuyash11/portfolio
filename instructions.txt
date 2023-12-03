@@ -1,0 +1,9 @@
+First pull if any changes on remote master to local master
+Update changes / code you want in local
+Add, Commit to local
+Push code to remote master
+
+npm run deploy
+this will publish code to gh-pages branch
+github will recognise the push and auto-deploy the changes
+see progress under actions tab on github for deployment
