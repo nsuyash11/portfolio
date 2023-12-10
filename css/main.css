@@ -203,6 +203,8 @@ main {
       color: #eece1a;
       font-weight: 400;
       font-size: 2rem; }
+    .about-info .bio-info h5 {
+        margin: 0;}
   .about-info .job-1 {
     grid-area: job1; }
   .about-info .job-2 {
