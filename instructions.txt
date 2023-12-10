@@ -1,9 +1,9 @@
 First pull if any changes on remote master to local master
-Update changes / code you want in local
-Add, Commit to local
+Update changes / code you want in local master
+Add to Stage and Commit to local master
 Push code to remote master
 
-npm run deploy
-this will publish code to gh-pages branch
-github will recognise the push and auto-deploy the changes
-see progress under actions tab on github for deployment
+"npm run deploy" in local terminal 
+this will publish code to gh-pages branch (by gh-pages npm dependency)
+github will recognise the push and auto-deploy the changes to URL - "username.github.io/reponame"
+see deployment progress under actions tab on github for deployment
