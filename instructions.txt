@@ -7,3 +7,10 @@ Push code to remote master
 this will publish code to gh-pages branch (by gh-pages npm dependency)
 github will recognise the push and auto-deploy the changes to URL - "username.github.io/reponame"
 see deployment progress under actions tab on github for deployment
+
+
+New Instructions -
+If deploying plain HTML website
+Have index.html OR index.md OR readme.md page in the ROOT of your repo
+This page will be deployed on gh pages (link given by github)
+No need to follow above instructions, for static website, that do not require a build
