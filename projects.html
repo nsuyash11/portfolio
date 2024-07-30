@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+
+    <title>Projects - Suyash N</title>
+    <link rel="icon" type="image/x-icon" href="/images/title_icon.jpg">
+
+    <style>
+        body {
+            font-family: "Roboto Condensed", sans-serif;
+            font-optical-sizing: auto;
+            font-weight: 400px;
+            font-style: normal;
+            background-color: #333;
+            color: #ffd700;
+            margin: 0;
+            padding: 0;
+            line-height: 1.5;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .container {
+            text-align: center;
+            padding: 1.5rem;
+        }
+
+        .container .heading {
+            color: #ffd700;
+            font-size: 3rem;
+        }
+
+        .container p {
+            font-size: 1.2rem;
+            color: #bbb;
+            font-style: italic;
+            margin: 0.2rem;
+        }
+
+        .navbar {
+            display: flex;
+            justify-content: space-around;
+            background-color: #ffd9002d;
+            padding: 10px;
+        }
+
+        .navbar a {
+            text-decoration: none;
+            color: black;
+            font-size: 1.2rem;
+            font-weight: bold;
+        }
+
+        a:hover {
+            color: yellow;
+            text-shadow: 0.5px 0.5px 10px #ee3a1a;
+        }
+
+        @media only screen and (max-width: 300px) {
+            .grid-wrapper {
+                display: grid;
+                grid-template-columns: 1fr;
+                margin: 10px;
+                justify-items: center;
+                grid-gap: 1rem;
+                height: 100vh;
+            }
+        }
+
+        @media only screen and (min-width: 690px) {
+            .grid-wrapper {
+                display: grid;
+                grid-template-columns: repeat(4, 1fr);
+                margin: 10px;
+                justify-items: center;
+                grid-gap: 1rem;
+                margin: 1rem;
+                height: 100vh;
+            }
+        }
+
+        .card {
+            color: #fff;
+            text-align: center;
+            height: auto;
+            margin: 0.5rem;
+            width: 100%;
+        }
+
+        .card img {
+            width: 98%;
+            height: 75%;
+            border: #fff solid 2px;
+            transition: border 0.5s ease;
+        }
+
+        .card img:hover {
+            cursor: pointer;
+            border: #ffd700 solid 2px;
+        }
+
+        .card .button {
+            display: block;
+            padding: 0.5rem 1rem;
+            border-radius: 0.2rem;
+            text-align: center;
+            text-decoration: none;
+            color: #fff;
+            background-color: #666;
+            transition: background-color 0.5s ease;
+        }
+
+        .card .button:hover {
+            background-color: #ffd700;
+            cursor: pointer;
+            color: aliceblue;
+            transition-timing-function: ease-in;
+        }
+
+
+        .footer {
+            text-align: center;
+            padding: 0.5rem;
+            background-color: #444;
+            color: #fff;
+            margin-top: auto;
+        }
+    </style>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+
+
+<body>
+    <div class="navbar">
+        <a href="home.html">Home</a>
+        <a href="about.html">About Me</a>
+        <a href="#">Projects</a>
+        <a href="contact.html">Contact</a>
+    </div>
+
+    <div class="container">
+        <span class="heading">Projects</span>
+        <p>Checkout some of my projects done...</p>
+
+        <div class="grid-wrapper">
+            <div class="card p1">
+                <a href=""><img src="images/projects/Manual_Testing.jpg" alt=""></a>
+                <a href="" class="button"><i class="fab fa-github"></i> Manual Testing <i class="far fa-eye"></i></a>
+            </div>
+            <div class="card p2">
+                <a href=""><img src="images/projects/API_Testing.jpg" alt=""></a>
+                <a href="" class="button"><i class="fab fa-github"></i> API Test Automation <i
+                        class="far fa-eye"></i></a>
+            </div>
+            <div class="card p3">
+                <a href=""><img src="images/projects/postman.JPG" alt=""></a>
+                <a href="" class="button"><i class="fab fa-github"></i> API Testing POSTMAN <i
+                        class="far fa-eye"></i></a>
+            </div>
+            <div class="card p4">
+                <a href=""><img src="images/projects/Sel_Py.JPG" alt=""></a>
+                <a href="" class="button"><i class="fab fa-github"></i> Selenium Web Automation <i
+                        class="far fa-eye"></i></a>
+            </div>
+            <div class="card p5">
+                <a href=""><img src="images/projects/algo.jpeg" alt=""></a>
+                <a href="" class="button"><i class="fab fa-github"></i> Algo Trading Bridge <i
+                        class="far fa-eye"></i></a>
+            </div>
+            <div class="card p6">
+                <a href=""><img src="images/projects/project4.jpg" alt=""></a>
+                <a href="" class="button"><i class="fab fa-github"></i> Community Bug Bounty <i
+                        class="far fa-eye"></i></a>
+            </div>
+            <div class="card p7">
+                <a href=""><img src="images/projects/title_icon.jpg" alt=""></a>
+                <a href="" class="button"><i class="fab fa-github"></i> Portfolio Website <i class="far fa-eye"></i></a>
+            </div>
+        </div>
+
+    </div>
+
+    <footer class="footer">
+        Version : 1.2 👨🏻‍💻 Build : Aug 2024 🎁 Made with 💛 using Vanilla HTML-CSS-JS
+    </footer>
+
+</body>
+
+</html>

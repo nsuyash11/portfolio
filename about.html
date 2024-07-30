@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+
+    <title>About Me - Suyash N</title>
+    <link rel="icon" type="image/x-icon" href="/images/title_icon.jpg">
+
+    <style>
+        body {
+            font-family: "Roboto Condensed", sans-serif;
+            font-optical-sizing: auto;
+            font-weight: 400px;
+            font-style: normal;
+            background-color: #333;
+            color: #ffd700;
+            margin: 0;
+            padding: 0;
+            line-height: 1.5;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .container {
+            text-align: center;
+            padding: 1.5rem;
+        }
+
+        .container .heading {
+            color: #ffd700;
+            font-size: 3rem;
+        }
+
+        .container p {
+            font-size: 1.2rem;
+            color: #bbb;
+            font-style: italic;
+            margin: 0.2rem;
+        }
+
+        .navbar {
+            display: flex;
+            justify-content: space-around;
+            background-color: #ffd9002d;
+            padding: 10px;
+        }
+
+        .navbar a {
+            text-decoration: none;
+            color: black;
+            font-size: 1.2rem;
+            font-weight: bold;
+        }
+
+        a:hover {
+            color: yellow;
+            text-shadow: 0.5px 0.5px 10px #ee3a1a;
+        }
+
+        @media only screen and (max-width: 300px) {
+            .grid-wrapper {
+                display: grid;
+                grid-template-columns: 1fr;
+                margin: 10px;
+                justify-items: center;
+                grid-gap: 1rem;
+            }
+        }
+
+        @media only screen and (min-width: 600px) {
+            .grid-wrapper {
+                display: grid;
+                grid-template-columns: [col1-start] 1fr [col2-start] 1fr [col3-start] 1fr [col3-end];
+                margin: 10px;
+                justify-items: center;
+                grid-gap: 1rem;
+                margin: 1rem;
+                padding: 2rem;
+            }
+        }
+
+        .portrait {
+            padding: 0.1rem;
+            text-align: center;
+            align-self: center;
+        }
+
+        .portrait img {
+            border-radius: 50%;
+            margin: 1rem;
+            width: 50%;
+            height: auto;
+            border: 2px solid #ffd700;
+            box-shadow: 0.5px 0.5px 10px #ee3a1a;
+        }
+
+        .bio {
+            grid-column: col2-start / col3-end;
+            padding: 1rem;
+            text-align: justify;
+            color: #fff;
+            font-size: 1.5rem;
+        }
+
+        .bio h3 {
+            display: block;
+            font-size: 2.4rem;
+            color: #ffd700;
+            font-weight: 400;
+            margin: 0;
+        }
+
+        .bio a span {
+            font-size: 1.8rem;
+            color: skyblue;
+            font-style: italic;
+            display: block;
+            padding-bottom: 0.5rem;
+            text-decoration: underline;
+        }
+
+        .card span {
+            display: block;
+            font-size: 1.8rem;
+            color: #ffd700;
+            text-align: center;
+            font-weight: 400;
+            margin: 5px;
+        }
+
+        .card {
+            color: #fff;
+            background-color: #444;
+            border-bottom: #ffd700 solid 5px;
+            padding: 0.5rem 1rem;
+            text-align: justify;
+            margin: 0.5rem;
+            height: auto;
+            font-size: 1.2rem;
+        }
+
+        .footer {
+            text-align: center;
+            padding: 0.5rem;
+            background-color: #444;
+            color: #fff;
+            margin-top: auto;
+        }
+    </style>
+</head>
+
+
+<body>
+    <div class="navbar">
+        <a href="home.html">Home</a>
+        <a href="#">About Me</a>
+        <a href="projects.html">Projects</a>
+        <a href="contact.html">Contact</a>
+    </div>
+
+    <div class="container">
+        <span class="heading">About "Me"</span>
+        <p>A person is more than what a resume / portfolio / certificate can describe...</p>
+
+        <div class="grid-wrapper">
+            <div class="portrait">
+                <img src="images/suyash_portrait.jpg" alt="">
+            </div>
+            <div class="bio">
+                <h3>Bio</h3>
+                <a href="https://1drv.ms/b/s!AlY97hINcIlF-HM5tHvOdnxyjiRb?e=EWeSUV" target="_blank">
+                    <span>Click here to Download Resume - 📃</span></a>
+                A Software Tech Analyst cum Capital Markets fanatic aspiring to specialize in Full Stack QA Testing. Can quickly grasp new concepts leveraging my critical thinking and problem-solving skills. Identified as efficient by my peers, I can give my best efforts for contributing towards team progress.
+            </div>
+            <div class="card quality">
+                <span>Urge for Quality</span>
+                As a dedicated Quality Practitioner, I possess an unwavering <u><b>urge for quality</b></u>, meticulous <u><b>attention to fine details</b></u> and a keen ability to <u><b>evaluate risks</b></u>. With a strong ethical foundation, I believe in improvement as a continuous process along with <u><b>compliance</b></u>, ensuring standards are met with consistency. 
+            </div>
+            <div class="card automation">
+                <span>Automation Curiosity</span>
+                Automation enthusiast with expertise in <u><b>Python Selenium</b></u> library for <u><b>Web UI</b></u> as well as <u><b>Python Requests</b></u> library & <u><b>Postman</b></u> JavaScript Chai assertions for <u><b>API testing</b></u>. Curios in leveraging technology to boost productivity, I have built <u><b>algo-server</b></u> with Python Flask to manage automated stock trade orders from TradingView Chart WebHooks efficiently !
+            </div>
+            <div class="card philosophy">
+                <span>Philosophy at Core</span>
+                "I" am among Everyone and There is a "Me" in everyone. Just like a drop of water from the Ocean is part of the Ocean and Ocean is nothing but such drops itself. <u><b>Present is the Actionable Truth</b></u> and Past/Future both are mirage. We cannot control the outcome but always being with a vision to keep atleast the known exposed risks are well in our control !
+            </div>
+        </div>
+
+    </div>
+
+    <footer class="footer">
+        Version : 1.2 👨🏻‍💻 Build : Aug 2024 🎁 Made with 💛 using Vanilla HTML-CSS-JS
+    </footer>
+
+</body>
+
+</html>

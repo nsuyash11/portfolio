@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+
+    <title>Portfolio - Suyash N</title>
+    <link rel="icon" type="image/x-icon" href="images/title_icon.jpg">
+
+    <style>
+        body {
+            font-family: "Roboto Condensed", sans-serif;
+            font-optical-sizing: auto;
+            font-weight: 400px;
+            font-style: normal;
+            color: #ffd700;
+            margin: 0;
+            padding: 0;
+            line-height: 1.5;
+            background: url(images/home_background.png) no-repeat center center fixed;
+            background-size: cover;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            background: (0, 0, 0, 0);
+        }
+
+        @media only screen and (min-width: 300px) {
+            .grid-container {
+                padding: 50px;
+                display: grid;
+                grid-template-columns: 1fr;
+                justify-items: center;
+                margin: 10px;
+            }
+        }
+
+        @media only screen and (min-width: 600px) {
+            .grid-container {
+                padding: 50px;
+                display: grid;
+                grid-template-columns: [col1-start] 1fr [col2-start] 2fr [col3-start] 2fr [col3-end];
+                justify-items: center;
+                margin: 10px;
+            }
+        }
+
+        .portrait {
+            border: red;
+            border-width: 5px;
+            grid-column: col1-start / col2-start;
+            padding: 0.1rem;
+            text-align: center;
+            align-self: center;
+        }
+
+        .portrait img {
+            border-radius: 50%;
+            max-width: 80%;
+            height: auto;
+            border: 2px solid #ffd700;
+            box-shadow: 0.5px 0.5px 10px #ee3a1a;
+        }
+
+        .heading {
+            position: relative;
+            text-align: center;
+            color: white;
+            color: #ffd700;
+            font-size: 5rem;
+            grid-column: col2-start / col3-end;
+        }
+
+        .heading p {
+            color: white;
+            grid-column: col2-start / col3-end;
+            text-align: center;
+            font-size: 1.35rem;
+        }
+
+        .social-icons {
+            margin-top: 20px;
+            grid-column: col2-start / col3-end;
+            text-align: center;
+            padding: 5px;
+            margin-bottom: 5px;
+        }
+
+        .social-icons a {
+            margin: 0 10px;
+            text-decoration: none;
+            color: white;
+            font-size: 2rem;
+        }
+
+        .navbar {
+            display: flex;
+            justify-content: space-around;
+            background-color: #ffd9002d;
+            padding: 10px;
+        }
+
+        .navbar a {
+            text-decoration: none;
+            color: rgb(191, 191, 191);
+            font-size: 1.2rem;
+            font-weight: bold;
+        }
+
+        .footer {
+            text-align: center;
+            padding: 0.5rem;
+            background-color: #444;
+            color: #fff;
+            margin-top: auto;
+        }
+
+        a:hover {
+            color: yellow;
+            text-shadow: 0.5px 0.5px 10px #ee3a1a;
+        }
+
+        .icons:hover {
+            color: #ffd700;
+            text-shadow: 0.5px 0.5px 10px #ee3a1a;
+        }
+    </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+
+<body>
+
+    <div class="navbar">
+        <a href="#">Home</a>
+        <a href="about.html">About Me</a>
+        <a href="projects.html">Projects</a>
+        <a href="contact.html">Contact</a>
+    </div>
+
+    <div class="grid-container">
+        <div class="portrait">
+            <img src="images/suyash_portrait.jpg" alt="">
+        </div>
+        <div class="heading">
+            Suyash Ratnakar Nachankar
+            <p>Quality Practitioner, Automation Enthusiast, Capital Markets Fanatic, Philosopher</p>
+        </div>
+        <div class="social-icons">
+            <a href="https://github.com/nsuyash11" target="_blank" class="icons"><i class="fab fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/suyash-nachankar-26158b1b0/" target="_blank" class="icons"><i
+                    class="fab fa-linkedin"></i></a>
+            <a href="https://leetcode.com/nsuyash11" target="_blank" class="icons"><i class="fas fa-code"></i></a>
+
+        </div>
+    </div>
+
+
+    <footer class="footer">
+        Version : 1.2 👨🏻‍💻 Build : Aug 2024 🎁 Made with 💛 using Vanilla HTML-CSS-JS
+    </footer>
+</body>
+
+</html>
