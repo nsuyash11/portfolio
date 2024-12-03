@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+
+    <title>Certifications - Suyash N</title>
+    <link rel="icon" type="image/x-icon" href="images/title_icon.jpg">
+
+    <style>
+        body {
+            font-family: "Roboto Condensed", sans-serif;
+            font-optical-sizing: auto;
+            font-weight: 400px;
+            font-style: normal;
+            background-color: #333;
+            color: #ffd700;
+            margin: 0;
+            padding: 0;
+            line-height: 1.5;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .container {
+            text-align: center;
+            padding: 1.5rem;
+        }
+
+        .container .heading {
+            color: #ffd700;
+            font-size: 3rem;
+        }
+
+        .container p {
+            font-size: 1.2em;
+            color: #bbb;
+            font-style: italic;
+            margin: 0.2rem;
+        }
+
+        main {
+            padding: 20px;
+        }
+
+        input#searchBox {
+            width: 50%;
+            padding: 10px;
+            margin-bottom: 20px;
+            box-sizing: border-box;
+            border-radius: 5px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        table,
+        th,
+        td {
+            border: 1px solid #ddd;
+        }
+
+        th,
+        td {
+            padding: 10px;
+            text-align: left;
+        }
+
+        td.mid {
+            text-align: center;
+        }
+
+        th {
+            background-color: #ffd900a0;
+            color: #000;
+            text-align: center;
+        }
+
+        td a {
+            color: #e6e1bb;
+            text-decoration: underline 0.05em rgba(0, 0, 0, 1);
+            text-underline-offset: 0.2em;
+            transition: text-decoration-color 200ms, text-underline-offset 200ms;
+        }
+
+        td a:hover {
+            text-decoration: underline;
+            text-underline-offset: 0.3em;
+            text-decoration-color: pink;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+
+        .navbar {
+            display: flex;
+            justify-content: space-around;
+            background-color: #ffd9002d;
+            padding: 10px;
+        }
+
+        .navbar a {
+            text-decoration: none;
+            color: black;
+            font-size: 1.2rem;
+            font-weight: bold;
+            transition: all 400ms;
+        }
+
+        a:hover {
+            color: yellow;
+            text-shadow: 0.5px 0.5px 10px #ee3a1a;
+        }
+
+        td a:hover {
+            color: rgb(46, 224, 188);
+            text-shadow: 0.5px 0.5px 10px #1a96ee;
+        }
+
+        .footer {
+            text-align: center;
+            padding: 0.5rem;
+            background-color: #444;
+            color: #fff;
+            margin-top: auto;
+        }
+
+        a:visited {
+            text-decoration: none;
+        }
+    </style>
+
+    <script>
+        function filterList() {
+            const searchBox = document.getElementById('searchBox');
+            const keyword = searchBox.value.toLowerCase();
+
+            const table = document.getElementById('certificationTable');
+            const rows = table.getElementsByTagName('tbody')[0].getElementsByTagName('tr');
+
+            for (let i = 0; i < rows.length; i++) {
+                const cells = rows[i].getElementsByTagName('td');
+                let match = false;
+
+                for (let j = 1; j < cells.length - 1; j++) { // Skip S.No. and Verify columns
+                    if (cells[j].textContent.toLowerCase().indexOf(keyword) > -1) {
+                        match = true;
+                        break;
+                    }
+                }
+
+                rows[i].style.display = match ? '' : 'none';
+            }
+        }
+
+    </script>
+</head>
+
+
+<body>
+    <div class="navbar">
+        <a title="Go to Home Section" href="index.html">Home</a>
+        <a title="Go to About Me Section" href="about.html">About Me</a>
+        <a title="Go to Projects Section" href="projects.html">Projects</a>
+        <a title="You are Here" href="#">Certifications</a>
+        <a title="Go to Contact Section" href="contact.html">Contact</a>
+    </div>
+
+    <div class="container">
+        <span class="heading">Certifications</span>
+        <p>Verification is Better than Cure... Click on the Links below to Verify Certificate Credentials from Issuer
+            !</p>
+        <main>
+            <input type="text" id="searchBox" placeholder="Search for Keyword from below Certificates List"
+                onkeyup="filterList()">
+            <table id="certificationTable">
+                <thead>
+                    <tr>
+                        <th>S.No.</th>
+                        <th>Certification Name</th>
+                        <th>Issuing Organization</th>
+                        <th>Date</th>
+                        <th>Verify Credentials</th>
+                    </tr>
+                </thead>
+                <tbody id="itemList">
+                    <tr>
+                        <td class="mid">1</td>
+                        <td><a href="https://1drv.ms/b/s!AlY97hINcIlF-z1FX0vjQnbK0VB2?e=PqZwFL" target="_blank">Bachelor
+                                of Engineering :
+                                Electronics & Telecom (Graduation Degree)</a></td>
+                        <td>University of Mumbai</td>
+                        <td class="mid">Jul 2019</td>
+                        <td class="mid"><a href="https://1drv.ms/b/s!AlY97hINcIlF-z1FX0vjQnbK0VB2?e=PqZwFL"
+                                target="_blank">Verify</a></td>
+                    </tr>
+                    <tr>
+                        <td class="mid">2</td>
+                        <td><a href="https://learn.microsoft.com/en-us/users/suyashnachankar-3841/transcript/dqgmri1ggxwykpx"
+                                target="_blank">Azure Cloud Fundamentals (AZ-900)</a></td>
+                        <td>Microsoft</td>
+                        <td class="mid">Jul 2020</td>
+                        <td class="mid"><a
+                                href="https://learn.microsoft.com/en-us/users/suyashnachankar-3841/transcript/dqgmri1ggxwykpx"
+                                target="_blank">Verify</a></td>
+                    </tr>
+                    <tr>
+                        <td class="mid">3</td>
+                        <td><a href="https://testautomationu.applitools.com/certificate/?id=6fd89c2e"
+                                target="_blank">Selenium WebDriver with Python</a></td>
+                        <td>Test Automation University</td>
+                        <td class="mid">May 2024</td>
+                        <td class="mid"><a href="https://testautomationu.applitools.com/certificate/?id=6fd89c2e"
+                                target="_blank">Verify</a></td>
+                    </tr>
+                    <tr>
+                        <td class="mid">4</td>
+                        <td><a href="https://testautomationu.applitools.com/certificate/?id=39f8d7c3"
+                                target="_blank">API Automation with Python</a></td>
+                        <td>Test Automation University</td>
+                        <td class="mid">Jun 2024</td>
+                        <td class="mid"><a href="https://testautomationu.applitools.com/certificate/?id=39f8d7c3"
+                                target="_blank">Verify</a></td>
+                    </tr>
+                    <td class="mid">5</td>
+                    <td><a href="https://1drv.ms/b/c/4589700D12EE3D56/QVY97hINcIkggEW3PQAAAAAAETzqFVxvDsB08w"
+                            target="_blank">Work Experience (Oct 2019 - Oct 2022)</a></td>
+                    <td>Accenture</td>
+                    <td class="mid">Oct 2022</td>
+                    <td class="mid"><a
+                            href="https://1drv.ms/b/c/4589700D12EE3D56/QVY97hINcIkggEW3PQAAAAAAETzqFVxvDsB08w"
+                            target="_blank">Verify</a></td>
+                    </tr>
+
+                    <!-- Add more rows as needed -->
+                </tbody>
+            </table>
+        </main>
+    </div>
+
+    <footer class="footer">
+        Version : 1.2 👨🏻‍💻 Build : Aug 2024 🎁 Made with 💛 using Vanilla HTML-CSS-JS
+    </footer>
+
+</body>
+
+</html>

@@ -59,11 +59,13 @@
             color: black;
             font-size: 1.2rem;
             font-weight: bold;
+            transition: all 400ms;
         }
 
         a:hover {
             color: yellow;
             text-shadow: 0.5px 0.5px 10px #ee3a1a;
+            text-decoration: none;
         }
 
         @media only screen and (max-width: 300px) {
@@ -126,6 +128,13 @@
             display: block;
             padding-bottom: 0.5rem;
             text-decoration: underline;
+            text-underline-offset: 0.1em;
+            transition: all 400ms;
+        }
+
+        .bio a span:hover{
+            text-underline-offset: 0.25em;
+            text-decoration-color: pink;
         }
 
         .card span {
@@ -164,12 +173,13 @@
         <a title="Go to Home Section" href="index.html">Home</a>
         <a title="You are Here" href="#">About Me</a>
         <a title="Go to Projects Section" href="projects.html">Projects</a>
+        <a title="Go to Certifications Section" href="certifications.html">Certifications</a>
         <a title="Go to Contact Section" href="contact.html">Contact</a>
     </div>
 
     <div class="container">
         <span class="heading">About "Me"</span>
-        <p>A person is more than what a resume / portfolio / certificate can describe...</p>
+        <p>A Person is more than what a Résumé / Portfolio / Certificate can describe...</p>
 
         <div class="grid-wrapper">
             <div class="portrait">
@@ -177,21 +187,34 @@
             </div>
             <div class="bio">
                 <h3>Bio</h3>
-                <a title="Click Here to Download My Resume" href="https://1drv.ms/b/s!AlY97hINcIlF-HM5tHvOdnxyjiRb?e=EWeSUV" target="_blank">
-                    <span>Click here to Download Resume - 📃</span></a>
-                A Software Tech Analyst cum Capital Markets fanatic aspiring to specialize in Full Stack QA Testing. Can quickly grasp new concepts leveraging my critical thinking and problem-solving skills. Identified as efficient by my peers, I can give my best efforts for contributing towards team progress.
+                <a title="Click Here to Download My Resume"
+                    href="https://1drv.ms/b/s!AlY97hINcIlF-HM5tHvOdnxyjiRb?e=EWeSUV" target="_blank">
+                    <span>Click here to Download Résumé - 📃</span></a>
+                A Software Tech Analyst cum Capital Markets fanatic aspiring to specialize in Full Stack QA Testing. Can
+                quickly grasp new concepts leveraging my critical thinking and problem-solving skills. Identified as
+                efficient by my peers, I can give my best efforts for contributing towards team progress.
             </div>
             <div class="card quality">
                 <span>Urge for Quality</span>
-                As a dedicated Quality Practitioner, I possess an unwavering <u><b>urge for quality</b></u>, meticulous <u><b>attention to fine details</b></u> and a keen ability to <u><b>evaluate risks</b></u>. With a strong ethical foundation, I believe in improvement as a continuous process along with <u><b>compliance</b></u>, ensuring standards are met with consistency. 
+                As a dedicated Quality Practitioner, I possess an unwavering <u><b>urge for quality</b></u>, meticulous
+                <u><b>attention to fine details</b></u> and a keen ability to <u><b>evaluate risks</b></u>. With a
+                strong ethical foundation, I believe in improvement as a continuous process along with
+                <u><b>compliance</b></u>, ensuring standards are met with consistency.
             </div>
             <div class="card automation">
                 <span>Automation Curiosity</span>
-                Automation Enthusiast with expertise in <u><b>Python Selenium</b></u> library for <u><b>Web UI</b></u> as well as <u><b>Python Requests</b></u> library & <u><b>Postman</b></u> JavaScript Chai assertions for <u><b>API testing</b></u>. Curious in leveraging technology to boost productivity, I have built <u><b>algo-server</b></u> with Python Flask to manage automated stock trade orders from TradingView Chart WebHooks efficiently !
+                Automation Enthusiast with expertise in <u><b>Python Selenium</b></u> library for <u><b>Web UI</b></u>
+                as well as <u><b>Python Requests</b></u> library & <u><b>Postman</b></u> JavaScript Chai assertions for
+                <u><b>API testing</b></u>. Curious in leveraging technology to boost productivity, I have built
+                <u><b>algo-server</b></u> with Python Flask to manage automated stock trade orders from TradingView
+                Chart WebHooks efficiently !
             </div>
             <div class="card philosophy">
                 <span>Philosophy at Core</span>
-                "I" am among Everyone and There is a "Me" in everyone. Just like a drop of water from the Ocean is part of the Ocean and Ocean is nothing but such drops itself. <u><b>Present is the only Actionable Truth</b></u> while Past/Future both are mirages. We canNOT control the outcome but we can always strive to keep atleast the <u><b>known risks</b></u> well in our control !
+                "I" am among Everyone and There is a "Me" in everyone. Just like a drop of water from the Ocean is part
+                of the Ocean and Ocean is nothing but such drops itself. <u><b>Present is the only Actionable
+                        Truth</b></u> while Past/Future both are mirages. We canNOT control the outcome but we can
+                always strive to keep atleast the <u><b>known risks</b></u> well in our control !
             </div>
         </div>
 
